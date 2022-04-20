@@ -28,6 +28,8 @@ class Question < ApplicationRecord
     inverse_of: :questions
   )
 
+  has_one_attached :figure_image
+
   validates :question, presence: true
   validates :answer, presence: true
   validates :distractor_1, presence: true

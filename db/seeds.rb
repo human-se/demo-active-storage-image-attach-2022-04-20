@@ -25,6 +25,8 @@ quiz1_q1 = Question.create!(
   distractor_2: 'Boston',
   quiz: quiz1
 )
+quiz1_q1.figure_image.attach(io: File.open(Rails.root.join('app/assets/images/capitol.jpeg')),
+filename: 'capitol.jpeg')
 
 quiz1_q2 = Question.create!(
   question: 'Who first discovered America?',
@@ -33,6 +35,8 @@ quiz1_q2 = Question.create!(
   distractor_2: 'The Pilgrims',
   quiz: quiz1
 )
+quiz1_q2.figure_image.attach(io: File.open(Rails.root.join('app/assets/images/map.jpeg')),
+filename: 'map.jpeg')
 
 quiz1_q3 = Question.create!(
   question: 'When was the Declaration of Independence signed?',
@@ -41,6 +45,8 @@ quiz1_q3 = Question.create!(
   distractor_2: 'September 3, 1783',
   quiz: quiz1
 )
+quiz1_q3.figure_image.attach(io: File.open(Rails.root.join('app/assets/images/declaration.jpeg')),
+filename: 'declaration.jpeg')
 
 # Quiz 2
 
