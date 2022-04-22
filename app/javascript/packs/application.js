@@ -20,3 +20,9 @@ document.addEventListener("turbolinks:load", () => {
   $('[data-toggle="popover"]').popover();
   autosize(document.querySelectorAll('textarea'));
 })
+
+import bsCustomFileInput from 'bs-custom-file-input';
+
+$(document).on('ready turbolinks:load', function() {
+  bsCustomFileInput.init();
+})
